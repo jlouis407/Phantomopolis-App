@@ -91,17 +91,4 @@ app.post("/login", function(req, res){
     });
 });
 
-var numberOfBuyButtons = document.querySelectorAll(".buy-button").length;
 
-for (var i = 0; i < numberOfBuyButtons; i++){
-
-    document.querySelectorAll(".buy-button")[i].addEventListener("click", function(){
-
-        var userItem = document.querySelectorAll(".card-title")[i].innerHTML;
-        const newPurchase = new Purchase ({
-            item: userItem
-        });
-
-        newPurchase.save();
-    });
-}
