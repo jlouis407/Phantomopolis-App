@@ -11,9 +11,16 @@ app.use(express.urlencoded({extended: true}));
 
 mongoose.connect("mongodb://localhost:27017/userDB", {useNewUrlParser: true});
 
+const purchaseSchema = {
+    item: String,
+    price: Number,
+    date: Date
+}
+
 const userSchema = {
     email: String,
-    password: String
+    password: String,
+    purchases: [purchaseSchema]
 };
 
 const User = new mongoose.model("User", userSchema);
