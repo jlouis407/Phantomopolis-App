@@ -1,7 +1,4 @@
 
-a {
-	font-family: 'Krona One', sans-serif;
-}
 
 .about {
 	margin-top: 50px;
@@ -10,7 +7,7 @@ a {
 
 body {
 	background-color: #F8F8FF;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Krona One', sans-serif;
 }
 
 button {
@@ -48,7 +45,6 @@ button {
 }
 
 .card-title {
-	font-family: 'Krona One', sans-serif;
 	text-align: center;
 	color: green;
 }
@@ -92,11 +88,11 @@ form {
 }
 
 footer {
-	font-family: 'Krona One', sans-serif;
 	text-align: center;
 	margin-top: 100px;
 	margin-bottom: 100px;
 }
+
 
 .login-form {
 	text-align: center;
@@ -174,13 +170,9 @@ footer {
 	margin-top: 200px;
 }
 
-p {
-	font-family: 'Krona One', sans-serif;
-}
 
 .page-header {
 	color: green;
-	font-family: 'Krona One', sans-serif;
 	margin-top: 50px;
 }
 
@@ -193,7 +185,7 @@ p {
 }
 
 #home-paragraph {
-	font-family: 'Krona One', sans-serif;
+	
 	margin-bottom: 100px;
 }
 	
@@ -215,10 +207,6 @@ hr {
 #order-car-online {
 	padding-top: 50px;
 	font-size: 150%;
-}
-
-.navbar {
-	font-family: 'Roboto', sans-serif;
 }
 
 .welcome-page {
