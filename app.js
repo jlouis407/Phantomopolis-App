@@ -51,8 +51,10 @@ app.get("/tools", function(req, res){
     res.render("tools");
 });
 
-app.get("/history", function(req, res){
-    res.render("history");
+app.get("/profile", function(req, res){
+    
+    var userEmail = req.body.username;
+    res.render("profile", {profileName: userEmail});
 })
 
 app.get("/register", function(req, res){
