@@ -31,6 +31,10 @@ app.get("/", function(req, res){
     res.render("index")
 });
 
+app.get("/home", function(req, res){
+    res.render("home")
+});
+
 app.get("/index", function(req, res){
     res.render("index")
 });
@@ -66,8 +70,7 @@ app.post("/register", function(req, res){
             console.log(err);
         } else {
 
-            var userEmail = req.body.username;
-            res.render("home", {profileName: userEmail});
+            res.render("home");
         }
     });
 });
@@ -83,7 +86,7 @@ app.post("/login", function(req, res){
         } else {
             if(foundUser){
                 if(foundUser.password === password){
-                    res.render("home", {profileName: username});
+                    res.render("home");
                 }
             }
         }

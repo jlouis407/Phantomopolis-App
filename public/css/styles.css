@@ -111,6 +111,11 @@ footer {
 	margin-top: 50px;
 }
 
+#name-display {
+	font-size: small;
+	margin-left: 50px;
+}
+
 .purchase-made {
 	margin-left: 300px;
 	margin-top: 100px;
@@ -129,6 +134,10 @@ footer {
 	font-size: 30px;
 	margin-bottom: 75px;
 	text-align: center;
+}
+
+span {
+	color: blue;
 }
 
 .submitbtn {
