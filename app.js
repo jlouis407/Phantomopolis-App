@@ -65,7 +65,9 @@ app.post("/register", function(req, res){
         if(err) {
             console.log(err);
         } else {
-            res.render("home");
+
+            var userEmail = req.body.username;
+            res.render("home", {profileName: userEmail});
         }
     });
 });
@@ -81,7 +83,7 @@ app.post("/login", function(req, res){
         } else {
             if(foundUser){
                 if(foundUser.password === password){
-                    res.render("home");
+                    res.render("home", {profileName: username});
                 }
             }
         }
