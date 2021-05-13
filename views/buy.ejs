@@ -1,0 +1,113 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+<form action="" method="POST">
+    <h2>Cars</h2>
+
+    <ul>
+        <li>
+            <input type="radio" id="black-mustang" name="blackMustang" value="Black Mustang">
+            <label class="radio-label">Black Mustang - $4,500 (DP)</label>
+        </li>
+        <li>
+            <input type="radio" id="orange-mustang" name="orangeMustang" value="Orange Mustang">
+            <label class="radio-label">Orange Mustang - $3,500 (DP)</label>
+        </li>
+        <li>
+            <input type="radio" id="yellow-audi" name="yellowAudi" value="Yellow Audi">
+            <label class="radio-label">Yellow Audi - $4,200 (DP)</label>
+        </li>
+        <li>
+            <input type="radio" id="red-nissan" name="redNissan" value="Red Nissan">
+            <label class="radio-label">Red Nissan - $4,300 (DP)</label>
+        </li>
+        <li>
+            <input type="radio" id="silver-audi" name="silverAudi" value="Silver Audi">
+            <label class="radio-label">Silver Audi - $4,250 (DP)</label>
+        </li>
+        <li>
+            <input type="radio" id="green-toyota" name="greenToyota" value="Green Toyota">
+            <label class="radio-label">Green Toyota - $4,100 (DP)</label>
+        </li>
+        <li>
+            <input type="radio" id="blue-chevy" name="blueChevy" value="Blue Chevy">
+            <label class="radio-label">Blue Chevy - $5,000 (DP)</label>
+        </li>
+        <li>
+            <input type="radio" id="white-bmw" name="whiteBMW" value="White BMW">
+            <label class="radio-label">White BMW - $4,725 (DP)</label>
+        </li>
+        <li>
+            <input type="radio" id="blue-beamer" name="blueBeamer" value="Blue Beamer">
+            <label class="radio-label">Blue Beamer - $4,500 (DP)</label>
+        </li>
+    </ul>
+
+
+   <h2>Parts</h2>
+
+   <ul>
+       <li>
+        <label>Car Seats</label>
+        <select name="carSeats" id="car-seats">
+            <option value="one-seat">One Seat - $100</option>
+            <option value="two-seats">Two Seats - $200</option>
+            <option value="three-seats">Three Seats - $300</option>
+            <option value="four-seats">Four Seats - $400</option>
+          </select>
+       </li>
+       <li>
+        <label>Side Mirrors</label>
+        <select name="sideMirrors" id="side-mirrors">
+            <option value="one-side-mirror">One Side Mirror - $125</option>
+            <option value="two-side-mirrors">Two Side Mirrors - $200</option>
+          </select>
+       </li>
+       <li>
+        <label>Car Lights</label>
+        <select name="carLights" id="car-lights">
+            <option value="one-car-light">One Car Light - $100</option>
+            <option value="two-car-lights">Two Car Lights - $200</option>
+            <option value="three-car-lights">Three Car Lights - $300</option>
+            <option value="four-car-lights">Four Car Lights - $400</option>
+          </select>
+       </li>
+       <li>
+        <label>Tires</label>
+        <select name="tires" id="car-tires">
+            <option value="one-tire">One Tire - $125</option>
+            <option value="two-tires">Two Tires - $250</option>
+            <option value="three-tires">Three Tires - $375</option>
+            <option value="four-tires">Four Tires - $500</option>
+          </select>
+       </li>
+       <li>
+        <label>Door Handles</label>
+        <select name="doorHandles" id="door-handles">
+            <option value="one-tire">One Tire - $125</option>
+            <option value="two-tires">Two Tires - $250</option>
+            <option value="three-tires">Three Tires - $375</option>
+            <option value="four-tires">Four Tires - $500</option>
+          </select>
+       </li>
+   </ul>
+
+   <h2>Tools</h2>
+    <ul>
+       <li>
+           <input type="radio" id="car-oil" name="carOil" value="Car Oil">
+           <label class="radio-label">Car Oil - $35</label>
+       </li>
+       <li>
+           <input type="radio" id="car-engine" name="carEngine" value="Car Engine">
+           <label class="radio-label">Car Engine - $1,500</label>
+       </li>
+       <li>
+           <input type="radio" id="yellow-audi" name="yellowAudi" value="Yellow Audi">
+           <label class="radio-label">Car Key - $100</label>  
+        </li>   
+    </ul>
+
+</form>
+
+<%- include('partials/footer') %>

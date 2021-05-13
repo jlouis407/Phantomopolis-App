@@ -94,6 +94,18 @@ footer {
 	margin-bottom: 100px;
 }
 
+.radio-label {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 50px;
+}
+
+.radio-label:hover {
+    background-color: gray;
+}
+
 
 .login-form {
 	text-align: center;
@@ -104,6 +116,16 @@ footer {
 .login-title {
 	text-align: center;
 	margin-top: 50px;
+}
+
+input[type="radio"]:checked + .radio-label {
+    background-color: black;
+    color: #DCDCDC;
+}
+
+
+input[type="radio"]{
+    display: none;
 }
 
 #invoice-header {
