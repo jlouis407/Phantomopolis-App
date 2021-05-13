@@ -41,6 +41,10 @@ app.get("/home", function(req, res){
     res.render("home")
 });
 
+app.get("/buy", function(req, res){
+    res.render("buy")
+})
+
 app.get("/index", function(req, res){
     res.render("index")
 });
