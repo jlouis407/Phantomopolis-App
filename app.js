@@ -12,7 +12,8 @@ app.use(express.urlencoded({extended: true}));
 mongoose.connect("mongodb+srv://admin-josiah:gQq2mRQTQQRPaDU@cluster0.mc6vw.mongodb.net/userDB", {useNewUrlParser: true});
 
 const purchaseSchema = {
-    item: String
+    item: String,
+    price: Number
 }
 
 const userSchema = {
