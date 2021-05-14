@@ -13,7 +13,6 @@ mongoose.connect("mongodb+srv://admin-josiah:gQq2mRQTQQRPaDU@cluster0.mc6vw.mong
 
 const purchaseSchema = {
     item: String,
-    price: Number
 }
 
 const userSchema = {
@@ -68,6 +67,13 @@ app.get("/tools", function(req, res){
 
 app.get("/register", function(req, res){
     res.render("register");
+});
+
+app.get("/profile", function(req, res){
+    Purchase.find({}, function(err, foundPurchases){
+        res.render("profile", {foundItems : foundPurchases});
+    })
+
 });
 
 app.post("/buy", function(req, res){
