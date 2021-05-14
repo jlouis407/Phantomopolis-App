@@ -69,13 +69,6 @@ app.get("/register", function(req, res){
     res.render("register");
 });
 
-app.get("/profile", function(req, res){
-    Purchase.find({}, function(err, foundPurchases){
-        res.render("profile", {foundItems : foundPurchases});
-    })
-
-});
-
 app.post("/buy", function(req, res){
         const {products} = req.body
         products.forEach(product => { 
@@ -85,8 +78,6 @@ app.post("/buy", function(req, res){
 
         newPurchase.save();
     });
-
-    res.render("purchase");
 });
 
 app.post("/register", function(req, res){
