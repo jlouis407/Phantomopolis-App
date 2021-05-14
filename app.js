@@ -80,7 +80,7 @@ app.post("/buy", function(req, res){
         newPurchase.save();
     });
 
-    res.render("/purchase");
+    res.render("purchase");
 });
 
 app.post("/register", function(req, res){
