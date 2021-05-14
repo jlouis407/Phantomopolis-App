@@ -23,6 +23,7 @@ const userSchema = {
 };
 
 const User = new mongoose.model("User", userSchema);
+const Purchase = new mongoose.model("Purchase", purchaseSchema);
 
 let port = process.env.PORT;
 if (port == null || port == ""){
@@ -78,6 +79,8 @@ app.post("/buy", function(req, res){
 
         newPurchase.save();
     });
+
+    res.render("/purchase");
 });
 
 app.post("/register", function(req, res){
