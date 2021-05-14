@@ -15,9 +15,23 @@ button {
 	margin-top: 50px;
 }
 
-#buy-button {
-	display: flex;
-	justify-content: center;
+#buy-container {
+	display: grid;
+	place-items: center;
+	margin-top: 100px;
+
+}
+
+.buy-div {
+	display: inline-block; 
+	margin: 25px 50px 100px 50px;
+	padding: 25px 25px 25px 25px;
+	border: 1px solid gray;
+	box-shadow: 0 2px 5px #ccc;
+}
+
+#buy-div-parts {
+	margin: 0;
 }
 
 .card {
@@ -117,6 +131,20 @@ input[type="checkbox"] {
     transform: scale(1.5);
 }
 
+input[type="submit"]{
+    background-color: green; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+	/*
+    margin-top: 50px;
+	*/
+	margin: 0 auto;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+}
+
 
 #invoice-header {
 	text-align: center;
@@ -127,6 +155,10 @@ input[type="checkbox"] {
 #name-display {
 	font-size: small;
 	margin-left: 50px;
+}
+
+.parts-label {
+	padding: 9px 9px;
 }
 
 .purchase-made {
