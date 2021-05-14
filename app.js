@@ -69,6 +69,17 @@ app.get("/register", function(req, res){
     res.render("register");
 });
 
+app.post("/buy", function(req, res){
+        const {products} = req.body
+        products.forEach(product => { 
+            const newPurchase = new Purchase({
+                item: product
+        });
+
+        newPurchase.save();
+    });
+});
+
 app.post("/register", function(req, res){
     const newUser = new User({
         email: req.body.username,
@@ -84,6 +95,7 @@ app.post("/register", function(req, res){
         }
     });
 });
+
    
 app.post("/login", function(req, res){
 
@@ -102,5 +114,4 @@ app.post("/login", function(req, res){
         }
     });
 });
-
 
