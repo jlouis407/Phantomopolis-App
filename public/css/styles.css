@@ -105,24 +105,16 @@ footer {
 	margin-top: 50px;
 }
 
-input[type="radio"]{
-    display: none;
-}
-
-.radio-label {
+.checkbox-label {
     color: black;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 10px 50px;
+    padding: 10px 10px;
 }
 
-.radio-label:hover {
-    background-color: gray;
-}
 
-input[type="radio"]:checked + .radio-label{
-    background-color: black;
-    color: #DCDCDC;
+input[type="checkbox"] {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5);
 }
 
 
